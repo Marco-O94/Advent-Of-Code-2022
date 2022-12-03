@@ -14,15 +14,14 @@ function getResult() {
     let calorySum = 0, calMax = 0;  
     calories.forEach((cal) => {
         if(cal != '') {
-            calorySum += parseInt(cal);
-        }else{
-            calMax < calorySum ? (calMax = calorySum, calorySum = 0) : calorySum = 0;
+            calorySum += parseInt(cal)
+            return
         }
-
-    });
+        if(calorySum > calMax) { calMax = calorySum }
+            calorySum = 0
+        });
     data.value.max = calMax;
-    return void 0;
-    
+    return  
 }
 </script>
 
