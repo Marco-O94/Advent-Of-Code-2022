@@ -20,7 +20,6 @@ function getResult() {
         }
 
     });
-    console.log(calMax);
     data.value.max = calMax;
     return void 0;
     
